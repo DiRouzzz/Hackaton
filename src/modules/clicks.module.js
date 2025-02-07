@@ -7,6 +7,6 @@ export class ClicksModule extends Module {
     }
 
     onClick(){
-        
+        const a = 0;
     }
 }
