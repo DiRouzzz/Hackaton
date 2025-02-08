@@ -1,4 +1,4 @@
-import {Menu} from './core/menu'
+import { Menu } from './core/menu';
 
 export class ContextMenu extends Menu {
 	constructor(selector) {
@@ -9,7 +9,6 @@ export class ContextMenu extends Menu {
 			event.preventDefault();
 			this.open(event.pageX, event.pageY);
 			console.log(event.pageX, event.pageY);
-			
 		});
 	}
 
@@ -17,8 +16,6 @@ export class ContextMenu extends Menu {
 		if (this.menuItems.length === 0) return;
 
 		this.el.style.top = `${y}px`;
-		console.log(this.el.style.top);
-		
 		this.el.style.left = `${x}px`;
 		this.el.classList.add('open');
 	}
@@ -28,7 +25,6 @@ export class ContextMenu extends Menu {
 	}
 
 	add(moduleInstance) {
-
 		this.menuItems.push(moduleInstance);
 
 		const menuItem = document.createElement('li');
