@@ -40,3 +40,15 @@ body {
 .menu .menu-item:hover {
     background: #343434;
 }
+
+.timer-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1001;
+}
